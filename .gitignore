@@ -7,6 +7,7 @@
 .yardopts
 bin
 build
+doc
 target
 out
 *.iml
