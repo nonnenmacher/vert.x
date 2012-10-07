@@ -4,6 +4,8 @@
   <modelVersion>4.0.0</modelVersion>
   <artifactId>vertx-lang-jruby</artifactId>
   <name>vert.x</name>
+  <groupId>${parent.groupId}</groupId>
+  <version>${parent.version}</version>
   <description>vert.x - Effortless asynchronous application development for the modern web and enterprise</description>
   <url>http://vertx.io</url>
   <inceptionYear>2011</inceptionYear>
@@ -28,23 +30,30 @@
   </scm>
   <dependencies>
     <dependency>
-      <groupId>org.vert-x</groupId>
-      <artifactId>vertx-core</artifactId>
-      <version>1.2.3.final</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.10</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>org.vert-x</groupId>
-      <artifactId>vertx-platform</artifactId>
-      <version>1.2.3.final</version>
-      <scope>compile</scope>
+	<dependency>
+    	<groupId>${project.parent.groupId}</groupId>
+    	<artifactId>vertx-core</artifactId>
+    	<version>${project.parent.version}</version>
     </dependency>
+     <dependency>
+    	<groupId>${project.parent.groupId}</groupId>
+    	<artifactId>vertx-platform</artifactId>
+    	<version>${project.parent.version}</version>
+    </dependency>
+
+     <dependency>
+     	<groupId>org.jruby</groupId>
+     	<artifactId>jruby</artifactId>
+     	<version>1.7.0.preview2</version>
+     </dependency>
+     <dependency>
+     	<groupId>org.hamcrest</groupId>
+     	<artifactId>hamcrest-core</artifactId>
+     </dependency>
   </dependencies>
   <properties>
     <project.build.sourceEncoding>UTF8</project.build.sourceEncoding>
@@ -52,7 +61,7 @@
   <parent>
   	<groupId>org.vert-x</groupId>
   	<artifactId>vertx-io</artifactId>
-  	<version>1.2.3.final</version>
+  	<version>1.2.4-SNAPSHOT</version>
   	<relativePath>../..</relativePath>
   </parent>
   
@@ -71,4 +80,5 @@
 		</plugins>
     </pluginManagement>
 	</build>
+
 </project>

@@ -76,7 +76,7 @@
   <parent>
   	<artifactId>vertx-io</artifactId>
   	<groupId>org.vert-x</groupId>
-  	<version>1.2.3.final</version>
+  	<version>1.2.4-SNAPSHOT</version>
   	<relativePath>..</relativePath>
   </parent>
   
@@ -95,4 +95,7 @@
 		</plugins>
     </pluginManagement>
 	</build>
+  
+  <groupId>${project.parent.groupId}</groupId>
+  <version>${project.parent.version}</version>
 </project>
