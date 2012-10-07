@@ -47,8 +47,8 @@
   </properties>
   <packaging>pom</packaging>
   <modules>
+  	
   	<module>vertx-core</module>
-  	<module>vertx-lang/vertx-lang-groovy</module>
   	<module>vertx-lang/vertx-lang-java/build</module>
   	<module>vertx-lang/vertx-lang-jruby</module>
   	<module>vertx-lang/vertx-lang-jython</module>
@@ -56,5 +56,22 @@
   	<module>vertx-platform</module>
   	<module>vertx-testframework</module>
   	<module>vertx-testsuite</module>
+  	<module>vertx-lang/vertx-lang-groovy</module>
   </modules>
+  
+  <build>
+    <pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+          		<version>2.5.1</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+		</plugins>
+    </pluginManagement>
+	</build>
 </project>
