@@ -52,12 +52,6 @@
   	<module>vertx-core</module>
   	<module>vertx-platform</module>
   	<module>vertx-lang/vertx-lang-groovy</module>
-  	
-  	
-  	
-  	
-  	
-  	
   	<module>vertx-lang/vertx-lang-java</module>
   	<module>vertx-lang/vertx-lang-jruby</module>
   	<module>vertx-lang/vertx-lang-jython</module>
@@ -91,6 +85,26 @@
   			<groupId>log4j</groupId>
   			<artifactId>log4j</artifactId>
   			<version>1.2.17</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>io.netty</groupId>
+  			<artifactId>netty</artifactId>
+  			<version>3.5.8.Final</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.codehaus.jackson</groupId>
+  			<artifactId>jackson-core-asl</artifactId>
+  			<version>1.9.4</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.codehaus.jackson</groupId>
+  			<artifactId>jackson-mapper-asl</artifactId>
+  			<version>1.9.4</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>com.hazelcast</groupId>
+  			<artifactId>hazelcast</artifactId>
+  			<version>2.1.2</version>
   		</dependency>
   	</dependencies>
   </dependencyManagement>
